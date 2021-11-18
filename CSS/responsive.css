@@ -1,0 +1,77 @@
+/*===================================================
+              Custom CSS Responsive Code
+====================================================*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+  .header-area .header-row .logo-area {
+    flex-basis: 23%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+  .header-area .header-row .logo-area {
+    flex-basis: 29%;
+  }
+  .header-area .header-row .menu-area {
+    flex-basis: 67%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 320px;
+  }
+  .header-area .header-row .logo-area {
+    flex-basis: 60%;
+  }
+  .header-area .header-row .logo-area .logo-title {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+  .nav-toggler {
+    display: flex;
+  }
+  .header-area .menu-area {
+    top: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    background-color: var(--theme-color);
+    border-top: 1px solid rgba(225, 225, 225, 0.4);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header-area #nav-check:checked ~ .menu-area {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header-area #nav-check:focus ~ .nav-toggler {
+    box-shadow: 0 0 10px #000000a2;
+  }
+  .header-area #nav-check:checked ~ .menu-area ul li {
+    display: block;
+    margin: 0;
+  }
+  .header-area #nav-check:checked ~ .nav-toggler span {
+    background-color: transparent;
+  }
+  .header-area #nav-check:checked ~ .nav-toggler span::before {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .header-area #nav-check:checked ~ .nav-toggler span::after {
+    top: 0;
+    transform: rotate(45deg);
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    max-width: 450px;
+  }
+}
