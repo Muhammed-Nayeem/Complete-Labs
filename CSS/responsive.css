@@ -8,6 +8,13 @@
   .header-area .header-row .logo-area {
     flex-basis: 23%;
   }
+  .hero-section {
+    padding: 30px 0;
+    height: 60vh;
+  }
+  .hero-content {
+    width: 60%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -20,11 +27,18 @@
   .header-area .header-row .menu-area {
     flex-basis: 67%;
   }
+  .hero-content {
+    width: 73%;
+  }
+  .hero-section {
+    padding: 30px 0;
+    height: 50vh;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .container {
-    max-width: 320px;
+    max-width: 310px;
   }
   .header-area .header-row .logo-area {
     flex-basis: 60%;
@@ -33,6 +47,7 @@
     font-size: 22px;
     letter-spacing: 1px;
   }
+  /*NavBar Responsive Code*/
   .nav-toggler {
     display: flex;
   }
@@ -55,7 +70,7 @@
   }
   .header-area #nav-check:checked ~ .menu-area ul li {
     display: block;
-    margin: 0;
+    margin: 8px 15px;
   }
   .header-area #nav-check:checked ~ .nav-toggler span {
     background-color: transparent;
@@ -68,10 +83,34 @@
     top: 0;
     transform: rotate(45deg);
   }
+  /*NavBar Responsive CSS Code End*/
+
+  .hero-section {
+    padding: 30px 0;
+    background-position: 76% 60%;
+    height: 50vh;
+  }
+  .hero-content {
+    width: 97%;
+  }
+  .hero-text h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .hero-text p {
+    font-size: 13px;
+  }
+  .button-group button {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     max-width: 450px;
+  }
+  .hero-text p {
+    font-size: 16px;
   }
 }
