@@ -27,6 +27,7 @@ body {
   font-weight: 400px;
   color: var(--hover-color);
   line-height: 1.6;
+  overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600px;
@@ -42,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 12px 0;
   width: 100%;
   position: relative;
+  z-index: 9999;
 }
 .header-area .header-row {
   display: flex;
@@ -142,3 +144,93 @@ h1, h2, h3, h4, h5, h6 {
   top: 8px;
 }
 /*Header CSS Code End*/
+
+/*Hero Banner CSS Code Start*/
+.hero-section {
+  background-image: url("../Images/background.jpg");
+  padding: 50px 0;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 60%;
+  position: relative;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: -250px;
+  width: 450px;
+  height: 450px;
+  background-color: var(--link-color);
+  border-radius: 50%;
+  border: 10px dashed var(--theme-color2);
+  opacity: .1;
+  animation: moveOn 5s infinite;
+  z-index: 1;
+}
+@keyframes moveOn {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hero-content {
+	top: 50%;
+	position: absolute;
+	transform: translateY(-50%);
+	z-index: 2;
+	padding: 10px 0;
+  width: 50%;
+}
+.hero-content .hero-text {
+	width: 100%;
+	margin: 20px 0;
+}
+.hero-text h2 {
+	font-size: 42px;
+	line-height: 50px;
+}
+.hero-text p {
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin: 15px 0;
+	color: var(--link-color);
+}
+.hero-content .button-group {
+	width: 100%;
+	padding: 12px 0;
+}
+.button-group button {
+	text-transform: capitalize;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+  cursor: pointer;
+}
+.button-group .button-one {
+	background: transparent;
+	border: 1px solid var(--link-color);
+	color: var(--link-color);
+  transition: .5s linear;
+}
+.button-group .button-two {
+	background-color: var(--theme-color2);
+	color: var(--hover-color);
+	margin-left: 30px;
+}
+.button-group button i {
+	width: 20px;
+	display: inline-block;
+  transition: .5s ease;
+}
+.button-group .button-one:hover {
+  background-color: var(--theme-color2);
+  color: var(--hover-color);
+}
+.button-group .button-one:hover i {
+  transform: translateX(10px);
+}
