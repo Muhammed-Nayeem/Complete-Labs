@@ -1,0 +1,144 @@
+/*CSS Variables Declaration*/
+:root {
+  --theme-color: #283346;
+  --link-color: #727987;
+  --hover-color: #ffffff;
+  --theme-color2: #3870FF;
+  --primary-font: 'Source Sans Pro', sans-serif;
+}
+/*Google Fonts Links*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+/*Universal Code*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Common CSS Code*/
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-weight: 400px;
+  color: var(--hover-color);
+  line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600px;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+/*Header CSS Code Start*/
+.header-area {
+  background-color: var(--theme-color);
+  padding: 12px 0;
+  width: 100%;
+  position: relative;
+}
+.header-area .header-row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-area .header-row .logo-area {
+  flex-basis: 20%;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+.header-area .header-row .logo-area .logo-title {
+  color: var(--hover-color);
+  font-size: 25px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 510;
+}
+.header-area .header-row .menu-area {
+}
+.header-area .header-row .menu-area ul {
+}
+.header-area .menu-area ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.header-area .menu-area ul li a {
+  display: block;
+  color: var(--link-color);
+  font-size: 16px;
+  padding: 10px 0;
+  position: relative;
+  transition: 0.5s ease;
+}
+.header-area .menu-area ul li a::before,
+.header-area .menu-area ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: var(--theme-color2);
+  transition: .5s ease;
+}
+.header-area .menu-area ul li a::before {
+  left: 0;
+  top: 74%;
+}
+.header-area .menu-area ul li a::after {
+  right: 0;
+  top: 10px
+}
+.header-area .menu-area ul li a:hover::before,
+.header-area .menu-area ul li a:hover::after {
+  width: 100%;
+}
+.header-area .menu-area ul li a:hover,
+.header-area .menu-area ul li a.active {
+  color: var(--hover-color);
+}
+.header-area #nav-check {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.nav-toggler {
+  width: 44px;
+  height: 34px;
+  background-color: var(--hover-color);
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.nav-toggler span {
+  display: block;
+  width: 34px;
+  height: 3px;
+  background-color: var(--theme-color);
+  border-radius: 2px;
+  position: relative;
+}
+.nav-toggler span::before,
+.nav-toggler span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-color);
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+.nav-toggler span::before {
+  top: -8px;
+}
+.nav-toggler span::after {
+  top: 8px;
+}
+/*Header CSS Code End*/
