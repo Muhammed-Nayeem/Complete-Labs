@@ -27,7 +27,6 @@ body {
   font-weight: 400px;
   color: var(--hover-color);
   line-height: 1.6;
-  overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600px;
@@ -149,29 +148,31 @@ h1, h2, h3, h4, h5, h6 {
 .hero-section {
   background-image: url("../Images/background.jpg");
   padding: 50px 0;
-  height: 90vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100% 60%;
+  object-fit: cover;
+  /* background-position: 100% 60%; */
   position: relative;
 }
 .hero-section::before {
   content: "";
   position: absolute;
   top: 80px;
-  left: -250px;
-  width: 450px;
-  height: 450px;
-  background-color: var(--link-color);
-  border-radius: 50%;
-  border: 10px dashed var(--theme-color2);
-  opacity: .1;
+  left: -150px;
+  width: 250px;
+  height: 250px;
+  background-color: var(--theme-color);
+  box-shadow: 6px 6px 12px #161e2c,
+              -6px -6px 12px #38404d;
+  opacity: .9;
   animation: moveOn 5s infinite;
   z-index: 1;
+  overflow: hidden;
 }
 @keyframes moveOn {
   from {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
@@ -183,10 +184,8 @@ h1, h2, h3, h4, h5, h6 {
 	transform: translateY(-50%);
 	z-index: 2;
 	padding: 10px 0;
-  width: 50%;
 }
 .hero-content .hero-text {
-	width: 100%;
 	margin: 20px 0;
 }
 .hero-text h2 {
@@ -234,3 +233,7 @@ h1, h2, h3, h4, h5, h6 {
 .button-group .button-one:hover i {
   transform: translateX(10px);
 }
+/*Hero Banner CSS End*/
+
+/*Services CSS Start*/
+
