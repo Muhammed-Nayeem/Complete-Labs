@@ -3,11 +3,11 @@
   --theme-color: #283346;
   --link-color: #727987;
   --hover-color: #ffffff;
-  --theme-color2: #3870FF;
-  --primary-font: 'Source Sans Pro', sans-serif;
+  --theme-color2: #3870ff;
+  --primary-font: "Source Sans Pro", sans-serif;
 }
 /*Google Fonts Links*/
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
 /*Universal Code*/
 * {
   margin: 0;
@@ -28,7 +28,12 @@ body {
   color: var(--hover-color);
   line-height: 1.6;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600px;
 }
 .container {
@@ -85,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 0%;
   height: 2px;
   background-color: var(--theme-color2);
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 .header-area .menu-area ul li a::before {
   left: 0;
@@ -93,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-area .menu-area ul li a::after {
   right: 0;
-  top: 10px
+  top: 10px;
 }
 .header-area .menu-area ul li a:hover::before,
 .header-area .menu-area ul li a:hover::after {
@@ -152,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
-  /* background-position: 100% 60%; */
+  background-position: 100% 60%;
   position: relative;
 }
 .hero-section::before {
@@ -163,9 +168,9 @@ h1, h2, h3, h4, h5, h6 {
   width: 250px;
   height: 250px;
   background-color: var(--theme-color);
-  box-shadow: 6px 6px 12px #161e2c,
-              -6px -6px 12px #38404d;
-  opacity: .9;
+  box-shadow: 6px 6px 12px #141e31, -6px -6px 12px #3e4550;
+  border-radius: 5px;
+  opacity: 0.9;
   animation: moveOn 5s infinite;
   z-index: 1;
   overflow: hidden;
@@ -179,52 +184,52 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .hero-content {
-	top: 50%;
-	position: absolute;
-	transform: translateY(-50%);
-	z-index: 2;
-	padding: 10px 0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: 10px 0;
 }
 .hero-content .hero-text {
-	margin: 20px 0;
+  margin: 20px 0;
 }
 .hero-text h2 {
-	font-size: 42px;
-	line-height: 50px;
+  font-size: 42px;
+  line-height: 50px;
 }
 .hero-text p {
-	font-size: 18px;
-	letter-spacing: 1px;
-	margin: 15px 0;
-	color: var(--link-color);
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 15px 0;
+  color: var(--link-color);
 }
 .hero-content .button-group {
-	width: 100%;
-	padding: 12px 0;
+  width: 100%;
+  padding: 12px 0;
 }
 .button-group button {
-	text-transform: capitalize;
-	padding: 15px 30px;
-	border: none;
-	border-radius: 3px;
-	font-size: 16px;
+  text-transform: capitalize;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
   cursor: pointer;
 }
 .button-group .button-one {
-	background: transparent;
-	border: 1px solid var(--link-color);
-	color: var(--link-color);
-  transition: .5s linear;
+  background: transparent;
+  border: 1px solid var(--link-color);
+  color: var(--link-color);
+  transition: 0.5s linear;
 }
 .button-group .button-two {
-	background-color: var(--theme-color2);
-	color: var(--hover-color);
-	margin-left: 30px;
+  background-color: var(--theme-color2);
+  color: var(--hover-color);
+  margin-left: 30px;
 }
 .button-group button i {
-	width: 20px;
-	display: inline-block;
-  transition: .5s ease;
+  width: 20px;
+  display: inline-block;
+  transition: 0.5s ease;
 }
 .button-group .button-one:hover {
   background-color: var(--theme-color2);
@@ -236,4 +241,115 @@ h1, h2, h3, h4, h5, h6 {
 /*Hero Banner CSS End*/
 
 /*Services CSS Start*/
+.services-section {
+  background-color: var(--theme-color);
+  padding: 25px 0;
+}
+.services-section .services-content {
+  padding: 10px;
+  margin: 15px 0;
+}
+.services-content .services-title {
+  text-align: center;
+}
+.services-title h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.services-title p {
+  text-align: center;
+  margin: 8px auto;
+  font-size: 16px;
+  color: var(--link-color);
+}
+.services-content .services-box {
+  padding: 40px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.services-box .single-services {
+  flex-basis: 30%;
+  background-color: var(--hover-color);
+  color: var(--theme-color);
+  text-align: center;
+  padding: 40px 10px;
+}
+.single-services i {
+  font-size: 25px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background-color: var(--theme-color2);
+  border-radius: 50%;
+  color: var(--hover-color);
+}
+.single-services h2 {
+  font-size: 22px;
+  color: var(--theme-color);
+  margin: 15px 0 10px 0;
+}
+.single-services p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: var(--link-color);
+}
+.single-services a {
+  display: inline-block;
+  margin: 20px 0 8px 0;
+  border: 1px solid var(--link-color);
+  padding: 9px 20px;
+  font-size: 16px;
+  color: var(--theme-color2);
+  letter-spacing: 1px;
+  transition: 0.5s ease;
+}
+.single-services a:hover {
+  background-color: var(--theme-color2);
+  color: var(--hover-color);
+}
+/*Services CSS End*/
 
+/*About Section CSS Start*/
+.about-section {
+  background-color: var(--theme-color2);
+  padding: 50px 0;
+  margin-top: -125px;
+}
+.about-conte {
+  margin: 70px 0 30px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-text {
+  flex-basis: 50%;
+  padding: 10px;
+}
+.about-text h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.about-text p {
+  font-size: 19px;
+}
+.about-icons {
+  flex-basis: 30%;
+  align-self: center;
+  padding: 10px;
+}
+.icon-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0 0 40px 0;
+}
+.icon-box i {
+  font-size: 60px;
+}
+/*About Section CSS End*/
