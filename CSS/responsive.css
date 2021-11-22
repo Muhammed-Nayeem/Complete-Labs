@@ -10,7 +10,18 @@
   }
   .hero-section {
     padding: 30px 0;
-    height: 100vh;
+    background-position: 85% 60%;
+  }
+  .services-box .single-services {
+    padding: 25px 10px;
+  }
+  .single-services h2 {
+    font-size: 18px;
+    margin: 12px 0 6px 0;
+  }
+  .single-services p {
+    font-size: 15px;
+    line-height: 25px;
   }
 }
 
@@ -26,7 +37,30 @@
   }
   .hero-section {
     padding: 30px 0;
-    height: 100vh;
+    background-position: 76% 60%;
+  }
+  .services-box .single-services {
+    flex-basis: 32%;
+    padding: 15px 5px;
+  }
+  .single-services h2 {
+    font-size: 15px;
+    margin: 10px 0 8px 0;
+  }
+  .single-services i {
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .single-services p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 22px;
+  }
+  .single-services a {
+    padding: 6px 12px;
+    font-size: 16px;
   }
 }
 
@@ -81,8 +115,7 @@
 
   .hero-section {
     padding: 30px 0;
-    background-position: 76% 60%;
-    height: 100vh;
+    background-position: 70% 60%;
   }
   .hero-text h2 {
     font-size: 26px;
@@ -94,6 +127,10 @@
   .button-group button {
     padding: 12px 12px;
     font-size: 14px;
+  }
+  .services-box .single-services {
+    flex-basis: 100%;
+    margin-bottom: 35px;
   }
 }
 
