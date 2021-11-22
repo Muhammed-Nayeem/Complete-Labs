@@ -23,6 +23,28 @@
     font-size: 15px;
     line-height: 25px;
   }
+  .about-conte {
+    margin: 50px 0 30px 0;
+  }
+  .about-text {
+    flex-basis: 55%;
+  }
+  .clients-logo ul li {
+    flex-basis: 14%;
+  }
+  .contact-content {
+    padding: 5px;
+  }
+  .single-box {
+    flex-basis: 49%;
+    padding: 0px 15px;
+  }
+  .single-group-box .text-group {
+    flex-basis: 60%;
+  }
+  .single-group-box .img-box {
+    flex-basis: 40%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -60,6 +82,74 @@
   }
   .single-services a {
     padding: 6px 12px;
+    font-size: 16px;
+  }
+  .about-conte {
+    margin: 50px 0 20px 0;
+  }
+  .about-text {
+    flex-basis: 63%;
+  }
+  .about-text h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .about-text p {
+    font-size: 15px;
+  }
+  .about-icons {
+    flex-basis: 35%;
+  }
+  .clients-section {
+    padding: 25px 0;
+  }
+  .clients-logo ul li {
+    flex-basis: 18%;
+  }
+  .contact-content {
+    padding: 0px;
+  }
+  .single-box {
+    flex-basis: 49%;
+  }
+  .single-group-box .text-group {
+    flex-basis: 65%;
+  }
+  .single-group-box .img-box {
+    flex-basis: 35%;
+    height: 156px;
+    align-self: flex-end;
+  }
+  .single-box a,
+  .single-box .text-group a {
+    margin: 15px 0 22px 0;
+    font-size: 13px;
+  }
+  .single-box h3,
+  .single-group-box .text-group h3 {
+    font-size: 16px;
+  }
+  .single-box p,
+  .single-group-box .text-group p {
+    font-size: 12px;
+  }
+  .single-footer-box:first-child {
+    flex-basis: 50%;
+  }
+  .single-footer-box h4 {
+    font-size: 15px;
+    letter-spacing: 0px;
+  }
+  .single-footer-box p {
+    font-size: 14px;
+  }
+  .single-footer-box {
+    flex-basis: 14%;
+  }
+  .single-footer-box .iconlist-2 li a {
+    font-size: 14px;
+  }
+  .single-footer-box .iconlist li a i {
     font-size: 16px;
   }
 }
@@ -131,6 +221,78 @@
   .services-box .single-services {
     flex-basis: 100%;
     margin-bottom: 35px;
+    padding: 25px 10px;
+  }
+  .single-services i {
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .single-services h2 {
+    font-size: 18px;
+  }
+  .single-services p {
+    font-size: 14px;
+  }
+  .single-services a {
+    font-size: 14px;
+  }
+  .about-section {
+    padding: 25px 0;
+    margin-top: -155px;
+  }
+  .about-conte {
+    margin: 50px 0 20px 0;
+  }
+  .about-text {
+    flex-basis: 100%;
+  }
+  .about-text h2 {
+    font-size: 25px;
+    letter-spacing: 0px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+  .about-icons {
+    flex-basis: 100%;
+    margin-top: 30px;
+  }
+  .clients-section {
+    padding: 15px 0;
+  }
+  .clients-title h2 {
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  .clients-logo {
+    padding: 15px 5px;
+  }
+  .clients-logo ul li {
+    flex-basis: 20%;
+    padding: 2px;
+  }
+  .single-box {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+  }
+  .single-group-box .text-group {
+    flex-basis: 100%;
+  }
+  .single-group-box .img-box {
+    display: none;
+  }
+  .footer-section {
+    padding: 50px 0 50px 0;
+    margin-top: -80px;
+  }
+  .single-footer-box:first-child {
+    flex-basis: 100%;
+  }
+  .single-footer-box {
+    flex-basis: 42%;
+    margin-top: 25px;
   }
 }
 
@@ -140,5 +302,14 @@
   }
   .hero-text p {
     font-size: 16px;
+  }
+  .single-group-box .text-group {
+    flex-basis: 65%;
+  }
+  .single-group-box .img-box {
+    display: block;
+    flex-basis: 35%;
+    height: 156px;
+    align-self: flex-end;
   }
 }
